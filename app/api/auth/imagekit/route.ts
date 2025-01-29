@@ -9,9 +9,9 @@ const {
 } = config;
 
 const imageKit = new ImageKit({
-  publicKey: publicKey as string,
-  privateKey: privateKey as string,
-  urlEndpoint: urlEndpoint as string,
+  publicKey,
+  privateKey,
+  urlEndpoint,
 });
 
 export async function GET() {
