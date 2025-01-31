@@ -38,13 +38,13 @@ const BorrowBook = ({
       if (result.success) {
         toast({
           title: "Borrowed Successfully",
-          description: "Book borrowed successfully",
+          description: result.message,
         });
         router.push("/my-profile");
       } else {
         toast({
           title: "Borrowing Error",
-          description: "An error occurred while borrowing the book",
+          description: result.message,
           variant: "destructive",
         });
       }
